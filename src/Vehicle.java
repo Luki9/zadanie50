@@ -37,5 +37,10 @@ class Vehicle {
     double reachDistance() {
         return 100 * getTank() / getAverageFuelConsumption();
     }
+    void printinfo(){
 
+        System.out.println(getName());
+        System.out.println(getAverageFuelConsumption());
+        System.out.println(getTank());
+    }
 }

@@ -19,13 +19,23 @@ class Car extends Vehicle {
     double reachDistance() {
 
         if (airCondition)
-            return 100 * getTank()/(getAverageFuelConsumption() + 0.8);
+            return 100 * getTank() / (getAverageFuelConsumption() + 0.8);
 
-        else return reachDistance();
 
+        else return super.reachDistance();
+
+
+    }
+
+    @Override
+    void printinfo() {
+        super.printinfo();
+        System.out.println(airCondition);
+        System.out.println(reachDistance());
 
 
     }
 }
+
 
 
