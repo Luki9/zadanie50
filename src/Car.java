@@ -14,7 +14,18 @@ class Car extends Vehicle {
         super(name, tank, averageFuelConsumption);
         this.airCondition = airCondition;
     }
-    boolean AirCondition(){
-        if (airCondition
+
+    @Override
+    double reachDistance() {
+
+        if (airCondition)
+            return 100 * getTank()/(getAverageFuelConsumption() + 0.8);
+
+        else return reachDistance();
+
+
+
     }
 }
+
+

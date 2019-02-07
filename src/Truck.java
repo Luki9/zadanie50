@@ -1,17 +1,24 @@
  class Truck extends Car{
 
-    int weight;
+    int load;
 
-     public int getWeight() {
-         return weight;
+     public int getLoad() {
+         return load;
      }
 
-     public void setWeight(int weight) {
-         this.weight = weight;
+     public void setLoad(int load) {
+         this.load = load;
      }
 
-     public Truck(String name, int tank, int averageFuelConsumption, boolean airConditionOn, int weight) {
+     public Truck(String name, int tank, int averageFuelConsumption, boolean airConditionOn, int load) {
          super(name, tank, averageFuelConsumption, airConditionOn);
-         this.weight = weight;
+         this.load = load;
+     }
+
+     @Override
+     double reachDistance() {
+         return super.reachDistance();
+         reachDistance()
      }
  }
+
